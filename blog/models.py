@@ -15,4 +15,8 @@ class Post(models.Model):
 
     def get_absolute_url(self):
         return f'/blog/{self.pk}/'
+
+    def get_file_ext(self):
+        return self.get_file_ext().split('.')[-1]
+
 # Create your models here.
