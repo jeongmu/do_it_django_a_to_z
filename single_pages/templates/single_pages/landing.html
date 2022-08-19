@@ -22,7 +22,7 @@
                 <div class="col-lg-5 mt-5">
                     <h2 class="text-light">Blog - Recent posts</h2>
                     {% for post in recent_posts %}
-                    <div class="card mt-1">
+                    <div class="card mt-1 w-75">
                       <div class="card-body">
                         <h6><a href="{{ post.get_absolute_url }}" class="text-decoration-none text-black">{{ post.title }}</a> </h6>
                           <span class="badge rounded-pill bg-light text-black float-end">
